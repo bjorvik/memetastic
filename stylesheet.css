@@ -108,7 +108,7 @@ h3 {
 .innlegg a {
     text-decoration: none;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     .innhold {
         width: 75%;
     }
