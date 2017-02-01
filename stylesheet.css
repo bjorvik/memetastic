@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+}
+body, html {
+    height: 100%;
+    font-family: Arial;
+}
+.page-wrap {
+    min-height: 100%;
+    margin-bottom: -150px;
+}
+.page-wrap:after {
+    content: "";
+    display: block;
+}
+.footer, .page-wrap:after {
+    height: 150px;
+}
+.footer {
+    background-color: #292929;
+    color: #ddd;
+    line-height: 150px;
+    text-align: center;
+}
+.meny {
+    width: 100%;
+    height: 75px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    z-index: 0;
+}
+a.menyknapp {
+    flex: auto;
+    text-align: center;
+    display: flex;
+    text-decoration: none;
+}
+a.menyknapp:hover {
+    background-color: crimson;
+}
+.item {
+    display: flex;
+    text-align: center;
+    flex: auto;
+}
+.icon {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    margin-top: 12.5px;
+    margin-left: 12.5px;
+    display: flex;
+    align-items: center;
+}
+.tekst {
+    flex: auto;
+    line-height: 75px;
+    font-family: Arial;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+.iconsvg {
+    width: 30px;
+    height: 30px;
+    fill: white;
+    margin: auto;
+}
+.innhold {
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+h1#overskrift {
+    font-size: 80px;
+    margin-right: 0;
+    margin-left: 0;
+}
+h3 {
+    color: rgba(0, 0, 0, 0.5);
+}
+.innlegg {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    padding-top: 10px;
+}
+.innlegg h1 {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+.innlegg h1:hover {
+    color: crimson;
+}
+.bilder {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+.bilder img {
+    width: 90%;
+    margin-bottom: 20px;
+}
+.innlegg a {
+    text-decoration: none;
+}
+@media only screen and (max-width: 800px) {
+    .innhold {
+        width: 75%;
+    }
+    h1#overskrift {
+        font-size: 60px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .icon {
+        width: 30px;
+        height: 30px;
+        margin-top: 22.5px;
+    }
+    .iconsvg {
+        width: 18px;
+        line-height: 30px;
+    }
+    .tekst {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    h1#overskrift {
+        font-size: 50px;
+    }
+}
