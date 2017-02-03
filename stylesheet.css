@@ -127,7 +127,7 @@ h3 {
         margin-top: 22.5px;
     }
 }
-@media only screen and (max-width: 500px) {
+/*@media only screen and (max-width: 500px) {
     .icon {
         width: 30px;
         height: 30px;
@@ -140,7 +140,7 @@ h3 {
     .tekst {
         font-size: 20px;
     }
-}
+}*/
 @media only screen and (max-width: 350px) {
     h1#overskrift {
         font-size: 50px;
