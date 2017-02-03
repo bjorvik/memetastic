@@ -100,10 +100,12 @@ h3 {
     width: 90%;
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .bilder img {
-    width: 90%;
-    margin-bottom: 20px;
+    width: 100%;
+
 }
 .innlegg a {
     text-decoration: none;
@@ -115,12 +117,21 @@ h3 {
     h1#overskrift {
         font-size: 60px;
     }
+    .meny {
+        height: 100px;
+    }
+    .tekst {
+        line-height: 100px;
+    }
+    .icon {
+        margin-top: 22.5px;
+    }
 }
 @media only screen and (max-width: 500px) {
     .icon {
         width: 30px;
         height: 30px;
-        margin-top: 22.5px;
+        margin-top: 35px;
     }
     .iconsvg {
         width: 18px;
