@@ -100,11 +100,10 @@ h3 {
     width: 90%;
     margin: auto;
     margin-top: 20px;
-    margin-bottom: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 .bilder img {
     width: 100%;
+    margin-bottom: 20px;
 
 }
 .innlegg a {
