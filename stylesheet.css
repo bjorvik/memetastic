@@ -87,11 +87,13 @@ h3 {
     background-color: rgba(0, 0, 0, 0.5);
     margin-top: 20px;
     padding-top: 10px;
+    border-radius: 10px;
 }
 .innlegg h1 {
     text-align: center;
     color: white;
     margin-top: 10px;
+    transition: .1s;
 }
 .innlegg h1:hover {
     color: crimson;
@@ -104,7 +106,7 @@ h3 {
 .bilder img {
     width: 100%;
     margin-bottom: 20px;
-
+    border-radius: 10px;
 }
 .innlegg a {
     text-decoration: none;
