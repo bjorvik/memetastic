@@ -4,6 +4,10 @@
 body, html {
     height: 100%;
     font-family: Arial;
+    background-image: url("gifs/background.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-origin: border-box;
 }
 .page-wrap {
     min-height: 100%;
@@ -25,7 +29,7 @@ body, html {
 .meny {
     width: 100%;
     height: 75px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #7D7D7D;
     display: flex;
     z-index: 0;
 }
@@ -36,7 +40,7 @@ a.menyknapp {
     text-decoration: none;
 }
 a.menyknapp:hover {
-    background-color: crimson;
+    animation: colorchangebackground .3s linear infinite;
 }
 .item {
     display: flex;
@@ -78,20 +82,21 @@ h1#overskrift {
     font-size: 80px;
     margin-right: 0;
     margin-left: 0;
+    animation: colorchange .2s infinite linear;
 }
 h3 {
-    color: rgba(0, 0, 0, 0.5);
+    color: white;
 }
 .innlegg {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #7D7D7D;
     margin-top: 20px;
     padding-top: 10px;
     border-radius: 20px;
 }
 .innlegg h1 {
     text-align: center;
-    color: white;
+    animation: colorchange .5s infinite linear;
     margin-top: 10px;
     transition: .1s;
 }
@@ -128,6 +133,7 @@ h3 {
         margin-top: 22.5px;
     }
 }
+
 @media only screen and (max-width: 500px) {
     .icon {
         width: 30px;
@@ -146,4 +152,33 @@ h3 {
     h1#overskrift {
         font-size: 50px;
     }
+}
+
+@keyframes colorchange
+{
+    0%   {color: red;}
+    10%  {color: orange;}
+    20%  {color: #ffe100;}
+    30%  {color: yellow;}
+    40%  {color: greenyellow;}
+    50%  {color: turquoise;}
+    60%  {color: #2269ff;}
+    70%  {color: #6800fb;}
+    80%  {color: darkviolet;}
+    90%  {color: mediumvioletred;}
+    100% {color: red;}
+}
+@keyframes colorchangebackground
+{
+    0%   {background-color: red;}
+    10%  {background-color: orange;}
+    20%  {background-color: #ffe100;}
+    30%  {background-color: yellow;}
+    40%  {background-color: greenyellow;}
+    50%  {background-color: turquoise;}
+    60%  {background-color: #2269ff;}
+    70%  {background-color: #6800fb;}
+    80%  {background-color: darkviolet;}
+    90%  {background-color: mediumvioletred;}
+    100% {background-color: red;}
 }
